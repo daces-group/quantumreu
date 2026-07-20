@@ -1,9 +1,9 @@
 ---
 layout: page
-title: ""
+title: "Research Experiences for Undergraduates (REU)"
 ---
 
-# Research Experiences for Undergraduates (REU) Site
+# Site
 Secure and Reliable Quantum Information Networks
 
 ## Description
