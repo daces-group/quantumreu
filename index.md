@@ -1,5 +1,3 @@
-# Research Experiences for Undergraduates (REU) on Secure and Reliable Quantum Information Networks
-
 ## Description
 This REU Site will prepare undergraduates to investigate how
 quantum information can be communicated, protected, and coordinated
