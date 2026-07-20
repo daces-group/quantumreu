@@ -1,5 +1,6 @@
 ---
-title:
+layout: page
+title: ""
 ---
 
 # Research Experiences for Undergraduates (REU) Site
