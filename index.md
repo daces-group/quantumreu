@@ -1,6 +1,6 @@
-# Research Experiences for Undergraduates (REU)
+title: Research Experiences for Undergraduates (REU)
 
-## Site Title
+## Site
 Secure and Reliable Quantum Information Networks
 
 ## Description
