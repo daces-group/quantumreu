@@ -1,9 +1,9 @@
 ---
 layout: page
-title: "Research Experiences for Undergraduates (REU)"
+title: "Research Experiences for Undergraduates"
 ---
 
-# Site
+# Site Name
 Secure and Reliable Quantum Information Networks
 
 ## Description
@@ -16,4 +16,5 @@ when noise, communication resources, and trust are limited.
 * Eric Chitambar (co-PI)
 * Olgica Milenkovic (Faculty Mentor)
 
-
+## Partners and Collaborators
+* IBM Quantum
