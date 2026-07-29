@@ -15,6 +15,8 @@ when noise, communication resources, and trust are limited.
 * Daniel Alabi (PI)
 * Eric Chitambar (co-PI)
 * Olgica Milenkovic (Faculty Mentor)
+* Milad Marvian (Faculty Mentor)
 
 ## Partners and Collaborators
 * IBM Quantum
+* Chicago Quantum Exchange
