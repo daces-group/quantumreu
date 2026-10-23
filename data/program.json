@@ -1,0 +1,127 @@
+{
+  "title": "Secure and Reliable Quantum Information Networks",
+  "year": 2027,
+  "dates": "May 24–July 30, 2027",
+  "start_date": "2027-05-24",
+  "end_date": "2027-07-30",
+  "students": 10,
+  "weeks": 10,
+  "location": "University of Illinois Urbana-Champaign",
+  "application_url": "",
+  "application_status": "Applications open December 1, 2026",
+  "application_deadline": "January 30, 2027 (planned)",
+  "support_statement": "$700 per week ($7,000 over ten weeks), fully covered on-campus housing, and travel to and from the Illinois Urbana-Champaign campus. Occasional meals are provided.",
+  "eligibility_statement": "The program is designed for students pursuing an undergraduate degree. Final 2027 eligibility requirements, including any citizenship or residency conditions tied to funding, will be published with the application.",
+  "funding_statement": "The 2027 program is confirmed regardless of the NSF funding decision. A proposal has been submitted to NSF; funding has not been announced.",
+  "contact_name": "Dr. Natasha Mamaril",
+  "contact_email": "nmamaril@illinois.edu",
+  "pi_email": "alabid@illinois.edu",
+  "mentors": [
+    {
+      "id": "alabi",
+      "name": "Daniel Alabi",
+      "role": "Principal Investigator · Site Director",
+      "affiliation": "University of Illinois Urbana-Champaign",
+      "initials": "DA",
+      "focus": "Secure communications",
+      "bio": "Leads the secure communications thrust and the overall program. His research connects algorithms, privacy, cryptography, and information theory. He oversees project integration, recruitment, and the student research experience.",
+      "projects": [
+        "S1",
+        "S2"
+      ],
+      "url": "https://ece.illinois.edu/about/directory/faculty/alabid"
+    },
+    {
+      "id": "chitambar",
+      "name": "Eric Chitambar",
+      "role": "Co-Principal Investigator",
+      "affiliation": "University of Illinois Urbana-Champaign",
+      "initials": "EC",
+      "focus": "Consensus & quantum security",
+      "bio": "Leads the distributed quantum consensus thrust and shares program leadership. He mentors research on quantum information, communication, position verification, and nonlocal computation.",
+      "projects": [
+        "S3",
+        "Q1",
+        "Q2",
+        "Q3"
+      ],
+      "url": "https://ece.illinois.edu/about/directory/faculty/echitamb"
+    },
+    {
+      "id": "milenkovic",
+      "name": "Olgica Milenkovic",
+      "role": "Faculty Mentor · Coding Thrust Lead",
+      "affiliation": "University of Illinois Urbana-Champaign",
+      "initials": "OM",
+      "focus": "Quantum coding & reliability",
+      "bio": "Leads projects on quantum error correction, noise models, and decoding. Her mentoring connects coding and information theory with exact enumeration, algorithm design, and reproducible computation.",
+      "projects": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "url": "https://ece.illinois.edu/about/directory/faculty/milenkov"
+    },
+    {
+      "id": "marvian",
+      "name": "Milad Marvian",
+      "role": "Faculty Mentor",
+      "affiliation": "University of New Mexico",
+      "initials": "MM",
+      "focus": "Nonlocal computation & error correction",
+      "bio": "Contributes expertise in quantum information theory, control, error correction, and distributed quantum processing. His program mentoring spans position verification, consensus, and quantum error correction.",
+      "projects": [
+        "S3"
+      ],
+      "url": "https://www.unm.edu/~mmarvian/"
+    }
+  ],
+  "application_open": "December 1, 2026",
+  "stipend_weekly": 700,
+  "housing_statement": "Fully covered, suite-style housing in an on-campus residence hall, with a private bedroom and a shared living room and kitchen.",
+  "accommodations_statement": "Appropriate accommodations will be made for students with disabilities. Contact program coordination to discuss access needs and plan for your participation.",
+  "application_timeline": [
+    {
+      "date": "December 1, 2026",
+      "event": "Applications open",
+      "confirmed": true
+    },
+    {
+      "date": "December–January",
+      "event": "Application support and office hours; details forthcoming",
+      "confirmed": false
+    },
+    {
+      "date": "January 30, 2027",
+      "event": "Application deadline",
+      "confirmed": false
+    },
+    {
+      "date": "March 2, 2027",
+      "event": "Offer letters",
+      "confirmed": false
+    },
+    {
+      "date": "March 9, 2027",
+      "event": "Acceptance deadline",
+      "confirmed": false
+    },
+    {
+      "date": "May 24, 2027",
+      "event": "Program begins",
+      "confirmed": true
+    },
+    {
+      "date": "July 30, 2027",
+      "event": "Program concludes",
+      "confirmed": true
+    }
+  ],
+  "social_activities": [
+    "Introductory picnic",
+    "Summer Programs Ice Cream Social",
+    "Coffee chats with graduate students and REU alumni",
+    "Volunteering and outreach events",
+    "Field trip to national labs"
+  ]
+}

@@ -1,0 +1,94 @@
+[
+  {
+    "id":"S1","slug":"finite-key-qkd","thrust":"security","title":"Finite-key QKD under realistic link and sampling constraints","short_title":"When does a quantum link produce a secure key?",
+    "summary":"Model how loss, detector noise, and limited data change the amount of secret key a quantum link can generate.",
+    "question":"Which physical, statistical, and post-processing parameters determine the transition to a positive secret-key length?",
+    "context":"Quantum key distribution (QKD) establishes secret material between distant parties. Real experiments collect finite samples and operate with imperfect links, so idealized security calculations are only a starting point.",
+    "work":["Implement a prepare-and-measure and/or entanglement-based QKD model with basis choice, loss, detector noise, and finite samples.","Reproduce a known comparison between asymptotic and finite-key predictions, including parameter estimation, reconciliation leakage, and privacy amplification.","Vary the data allocated to estimation and explore when decoy states change the feasibility of key generation."],
+    "outcomes":["A documented QKD simulator","Sensitivity plots and a validated baseline","An analysis separating physical, statistical, and post-processing limits"],
+    "entry":"Programming and probability are useful entry points; the bridge modules introduce the quantum vocabulary.",
+    "methods":["Python / NumPy","Finite statistics","Protocol simulation"],"mentors":["alabi"],"pages":"7–8"
+  },
+  {
+    "id":"S2","slug":"authentication-key-lifecycle","thrust":"security","title":"Authentication and key lifecycle in a hybrid quantum/classical network","short_title":"How does a quantum network keep trust alive?",
+    "summary":"Design a model for authentication, key refresh, and recovery when messages are delayed, replayed, or lost.",
+    "question":"How much secret material must be reserved for authentication, and when can key refresh improve security without exhausting the key pool?",
+    "context":"QKD still needs authenticated classical messages. This project studies the protocol around the quantum link: where initial trust comes from, how keys are consumed, and how a system recovers when communication fails.",
+    "work":["Specify a state machine with an initial trust anchor, message authentication codes, and quantum-generated key refresh.","Define an adversary and simulate key consumption under representative message traffic.","Study replay, delay, loss, and resynchronization; optionally examine post-quantum signatures for identity functions."],
+    "outcomes":["An explicit threat model and protocol state machine","Key-consumption and recovery experiments","A protocol analysis with clearly stated assumptions"],
+    "entry":"Programming, algorithms, or discrete mathematics can provide a starting point.",
+    "methods":["State machines","Threat modeling","Simulation"],"mentors":["alabi"],"pages":"8",
+    "note":"This is a research protocol study; it does not make a production security claim."
+  },
+  {
+    "id":"S3","slug":"position-verification","thrust":"security","title":"Quantum position verification and attacks by nonlocal computation","short_title":"Can quantum information prove where you are?",
+    "summary":"Investigate how separated adversaries use entanglement and nonlocal computation to challenge location-based authentication.",
+    "question":"Can two-qubit nonlocal protocols be simplified or implemented with fewer entanglement and computational resources?",
+    "context":"In quantum position verification, remote verifiers use quantum challenges and response timing to test a claimed location. Coordinating adversaries may use shared entanglement to impersonate a legitimate prover. Understanding their capabilities helps clarify the security assumptions.",
+    "work":["Study existing constructions for two-qubit gates and measurements in quantum nonlocal computation.","Analyze their resource requirements and explore simplifications or reductions in entanglement cost.","Use Qiskit simulations to compare errors and time delays; explore three-qubit or multi-qubit extensions when feasible."],
+    "outcomes":["An analysis of a nonlocal protocol and its resource costs","Reproducible circuit simulations","A comparison of constructions and possible extensions"],
+    "entry":"Linear algebra and an interest in cryptography provide useful preparation; quantum circuits are introduced through the program.",
+    "methods":["Qiskit","Quantum circuits","Resource analysis"],"mentors":["chitambar","marvian"],"pages":"8"
+  },
+  {
+    "id":"C1","slug":"biased-noise-crossover","thrust":"coding","title":"Finite-size crossover maps under biased Pauli noise","short_title":"Which small quantum code wins under biased noise?",
+    "summary":"Enumerate error patterns to see when different small codes exchange their performance advantage.",
+    "question":"Where do finite-size logical-error curves cross, and which error patterns explain those crossovers?",
+    "context":"Physical devices need not produce X, Y, and Z errors equally often. Small codes make it possible to enumerate errors exactly and test whether familiar code rankings survive a change in the noise bias.",
+    "work":["Compare tractable distance-three constructions, such as the five-qubit code, Steane seven-qubit code, Shor nine-qubit code, rotated surface-9, and XZZX-9.","Assign syndromes and logical classes to Pauli errors and calculate exact logical-error probabilities across total-error and bias parameters.","Map crossover regions and identify the logical mechanisms responsible for changes in performance."],
+    "outcomes":["Validated exact-enumeration code","Crossover maps across noise parameters","An explanation of dominant logical-error patterns"],
+    "entry":"Python, bit-pattern manipulation, and linear algebra are useful. Extensive prior quantum physics is not required.",
+    "methods":["Exact enumeration","Stabilizer codes","Noise modeling"],"mentors":["milenkovic"],"pages":"8–9"
+  },
+  {
+    "id":"C2","slug":"code-versus-decoder","thrust":"coding","title":"Code versus decoder under biased and correlated noise","short_title":"Is the advantage in the code—or the decoder?",
+    "summary":"Separate code structure from decoder assumptions, then test what happens when errors become correlated.",
+    "question":"How much apparent code advantage remains under optimal decoding, and when can edge reweighting recover performance under correlated noise?",
+    "context":"An error-correcting code and its decoder are different parts of a reliability system. A decoder that assumes independent errors can miss structure in real noise, making a code look worse than it is.",
+    "work":["Compare exact maximum-likelihood decoding with a graph-based decoder such as minimum-weight perfect matching on small surface-code instances.","Introduce biased noise and tunable nearest-neighbor correlations, including paired Z errors.","Measure the decoding-performance gap and test whether effective edge reweighting can close it."],
+    "outcomes":["A controlled comparison of code and decoder effects","Performance maps under bias and correlation","An account of where reweighting succeeds or fails"],
+    "entry":"Programming, probability, and an interest in graphs or algorithms are useful starting points.",
+    "methods":["Maximum likelihood","Graph algorithms","Correlated noise"],"mentors":["milenkovic"],"pages":"9"
+  },
+  {
+    "id":"C3","slug":"small-code-search","thrust":"coding","title":"Small-code search and transparent simulation","short_title":"Can you discover a better small quantum code?",
+    "summary":"Search a bounded family of stabilizer codes and verify performance with independent computational checks.",
+    "question":"Does a code within a clearly defined search family outperform standard constructions at a selected noise bias or correlation level?",
+    "context":"A useful code search needs more than a promising numerical result. It must establish valid stabilizers, identify logical operators, and make every performance comparison reproducible. A well-characterized negative result can also be a valuable contribution.",
+    "work":["Generate candidates from binary symplectic generator matrices and check commutation, distance, and logical operators.","Connect Qiskit PauliList or equivalent data structures to independent syndrome tests and exact coset enumeration.","Validate with Monte Carlo simulation; consider larger-distance extensions with Stim and PyMatching when feasible."],
+    "outcomes":["A tested code-search repository","A documented search family and performance comparison","A reusable instructional notebook"],
+    "entry":"Programming, linear algebra, and systematic problem solving are useful preparation.",
+    "methods":["Code search","Qiskit","Monte Carlo"],"mentors":["milenkovic"],"pages":"9"
+  },
+  {
+    "id":"Q1","slug":"function-consensus","thrust":"consensus","title":"Function consensus from distributed qubit states","short_title":"What can a network compute together?",
+    "summary":"Build small-network protocols for shared functions of locally held quantum states while accounting for communication.",
+    "question":"How can parties compute functions of distributed Bloch vectors using limited quantum communication?",
+    "context":"A qubit can be represented by a Bloch vector. When qubits are held at different nodes, a collective calculation—such as an inner product or an average—must account for how information moves between them.",
+    "work":["Begin with two parties and study two-qubit processing, teleportation, and measurement expectations.","Explore functions such as the inner product of two Bloch vectors or their average.","Extend tractable protocols to three-party line and triangle networks, keeping a clear account of communication resources."],
+    "outcomes":["A mathematical model for a small consensus problem","A protocol calculation or simulation","A comparison of communication needs across small networks"],
+    "entry":"Basic linear algebra is an accessible entry point; the program develops the required quantum foundations.",
+    "methods":["Bloch vectors","Teleportation","Network models"],"mentors":["chitambar"],"pages":"9–10"
+  },
+  {
+    "id":"Q2","slug":"quantum-gossip","thrust":"consensus","title":"State consensus and quantum gossip on small graphs","short_title":"Can local interactions create global agreement?",
+    "summary":"Study quantum gossip and interaction rules that bring local qubit states toward a common state.",
+    "question":"How can local operations on a small interaction graph drive qubits toward a shared consensus state?",
+    "context":"State consensus asks the quantum systems themselves to approach agreement, rather than merely computing a function of their initial states. Quantum gossip connects this goal to repeated local interactions across a graph.",
+    "work":["Study state-consensus and quantum-gossip constructions with a mentor.","Formulate an interaction model on a small graph and describe the intended common Bloch vector.","Analyze or simulate the evolution of local states and investigate how the interaction structure affects agreement."],
+    "outcomes":["An explicit small-graph consensus model","A derivation or reproducible state-evolution study","A clear account of the agreement criterion and limitations"],
+    "entry":"Linear algebra and curiosity about networks or dynamical systems are useful preparation.",
+    "methods":["Quantum gossip","Graph models","State evolution"],"mentors":["chitambar"],"pages":"10",
+    "note":"The exact graph, interaction rule, and milestones will be scoped with the mentor. The activities above develop the proposal’s state-consensus direction into a student-facing project outline."
+  },
+  {
+    "id":"Q3","slug":"noisy-consensus","thrust":"consensus","title":"Consensus with noisy channels and limited resources","short_title":"What happens to agreement when the network is noisy?",
+    "summary":"Test how channel noise changes consensus, and whether simple protection helps within a fixed interaction budget.",
+    "question":"Does noise bias the limiting state, impose a convergence floor, or destroy a conserved quantity—and can simple protection improve the result?",
+    "context":"Distributed protocols must contend with imperfect communication. This project connects the consensus and coding thrusts by testing whether modest error protection improves collective behavior without changing the research objective.",
+    "work":["Add dephasing, depolarizing, erasure, or measurement errors to a small-network consensus protocol.","Use exact density-matrix simulation to track limiting behavior and distinguish statistical error from model error.","Compare topologies under a fixed interaction budget and test simple error detection, repetition, or a coded communication primitive."],
+    "outcomes":["Validated small-system density-matrix simulations","A study of noise, convergence, and resource tradeoffs","A comparison of protected and unprotected protocols"],
+    "entry":"Linear algebra, probability, and scientific programming provide useful foundations.",
+    "methods":["Density matrices","Noise models","Resource budgets"],"mentors":["chitambar"],"pages":"10"
+  }
+]
