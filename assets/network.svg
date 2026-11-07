@@ -9,5 +9,5 @@
 <g fill="#dce4e4" font-family="monospace" font-size="10" letter-spacing="1"><text x="25" y="32">Q-NET / SUMMER 2027</text><text x="475" y="32">01</text><text x="28" y="119">01 / SECURE</text><text x="315" y="166">02 / RELIABLE</text><text x="290" y="427">03 / CONNECTED</text></g>
 <g stroke="#d99269" fill="none" stroke-width=".8"><path d="M80 125v20l26 12M362 174h29v13M342 412v-27"/></g>
 <g fill="#b5c4cb" font-family="Georgia,serif" font-size="15" font-style="italic"><text x="272" y="108">|ψ⟩</text><text x="51" y="311">|0⟩</text><text x="189" y="419">|1⟩</text></g>
-<path d="M25 463h470" stroke="#516571" stroke-width=".6"/><g fill="#b6c5cc" font-family="monospace" font-size="8" letter-spacing=".8"><text x="25" y="487">COMMUNICATE · PROTECT · COORDINATE</text><text x="25" y="502" font-size="6.5" fill="#94a8b4">CONCEPTUAL NETWORK / NOT TO SCALE</text></g><circle cx="487" cy="488" r="4" fill="#c7dbbc"/>
+<path d="M25 463h470" stroke="#516571" stroke-width=".6"/><g fill="#b6c5cc" font-family="monospace" font-size="8" letter-spacing=".8"><text x="25" y="487">COMMUNICATE · PROTECT · COORDINATE</text></g><circle cx="487" cy="488" r="4" fill="#c7dbbc"/>
 </svg>
