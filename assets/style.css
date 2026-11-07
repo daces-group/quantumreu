@@ -12,3 +12,12 @@
 
 .hero-dates{font-size:13px;font-weight:650;letter-spacing:.01em;color:var(--ink);margin-top:24px}.hero .hero-dates+.lede{margin-top:15px}
 @media(max-width:600px){.hero-dates{font-size:12px;margin-top:22px}}
+
+/* Local faculty portraits; preserve a consistent, responsive profile layout. */
+.person-portrait{width:100%;max-width:235px;align-self:start}
+.person-portrait img{width:100%;height:auto;aspect-ratio:1;object-fit:cover;object-position:center 18%;border-radius:2px;background:#e9ece5}
+.person-portrait figcaption{margin-top:13px;line-height:1.55}
+.person-portrait figcaption>span{display:block;font-size:10px;font-weight:600;letter-spacing:.055em;text-transform:uppercase;color:var(--muted)}
+.person-portrait figcaption>a{display:inline-block;font-size:10px;margin-top:8px;color:var(--muted);text-underline-offset:3px}
+.person-portrait figcaption>a:hover{color:var(--orange)}
+@media(max-width:600px){.person-portrait{max-width:235px}.person-portrait figcaption>span{font-size:11px}}
